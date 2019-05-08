@@ -1,0 +1,54 @@
+ #menu{
+    margin-left: 0%;
+    width: 20%;
+    height: 1000px;
+    margin-top: -20px;
+    background-color: navy;
+ }
+
+ #profile p{
+    color: #fff;
+    font-size: 25px;
+}
+
+ #profile img{
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 40%;
+    margin-right: 20px;
+    float: left;
+}
+#lista{
+    margin-top: 40%;
+}
+
+ ul{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+ ul li{
+    position: relative;
+}
+
+ li ul {
+    position: block;
+    width: 80%;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+
+ ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        background: navy;
+        padding: 10px;
+        border: 1px solid #fff; 
+}
+
+ li:hover ul{
+     display: block;
+ }
