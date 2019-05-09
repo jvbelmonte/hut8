@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Static Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+    <link rel="stylesheet" type="text/css" href="users.css"/>
+    <link rel="stylesheet" type="text/css" href="graphic.css"/>
+    <link rel="stylesheet" type="text/css" href="feed.css"/>            
+    <link rel="stylesheet" type="text/css" href="main_profile.css"/>    
     <script src="main.js"></script>
 </head>
 <body>
     <div>
         <div id = "menu">
-
+            
+            <p id="welcome">Welcome, João</p>
+            
             <div id="profile">
                 <img src="img/foto_perfil.jpg"> 
-                <p>Joao Vitor Belmonte</p>
+                <p>
+                    <h3>Joao Vitor Belmonte</h3>
+                    @jvbelmonte
+                </p>
             </div>
 
-            <div id = "lista">
+            <p id="is"><br>Trainee</p>
+
+            <nav id = "lista">
                 <ul>
                     <li><a href="#">AAA</a>
                         <ul>
@@ -47,8 +58,78 @@
                         </ul>
                     </li>    
                 </ul>
+            </nav>
+        </div>   
+        
+        <div id = "users">
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <span class="profile_name">Fulano da Silva<br></span>
+                <span class="cargo">Cargo</span>
             </div>
+
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <span class="profile_name">Fulano da Silva<br></span>
+                <span class="cargo">Cargo</span>
+            </div>
+
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <span class="profile_name">Fulano da Silva<br></span>
+                <span class="cargo">Cargo</span>
+            </div>
+
+            <div class="profile_block">
+                <img src="img/foto_perfil.jpg">
+                <span class="profile_name">Fulano da Silva<br></span>
+                <span class="cargo">Cargo</span>
+            </div>
+        </div>
+        
+        <div id="down">
+
+            <div id="feed" class="box">
+                <h2>Feedback</h2>
+                
+                <div class="feedback_line">
+                    <span>Feedback 1</span>
+                    <button></button>   
+                    <output></output>
+                    <button></button>   
+                </div>
+                
+                <div class="feedback_line">
+                    <span>Feedback 2</span>
+                    <button></button>   
+                    <output></output>
+                    <button></button>   
+                </div>
+
+                <div class="feedback_line">
+                    <span>Feedback 3</span>
+                    <button></button>   
+                    <output></output>
+                    <button></button>   
+                </div>
+
+                <div class="feedback_line">
+                    <span>Feedback 4</span>
+                    <input>
+                </div>
+
+            </div>
+
+            <div id="pizza" class="box">
+
+            </div>
+
+            <div id="main_profile" class="box">
+                <img src="img/foto_perfil.jpg">
+            </div>
+
         </div>    
+        
     </div>
 </body>
 </html>
