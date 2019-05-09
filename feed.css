@@ -1,7 +1,7 @@
 .feedback_line{
     display: list-item;
     list-style: none;
-    width: 40%;
+    width: 65%;
     height: 60px;
     border: 3px solid black;
 }
