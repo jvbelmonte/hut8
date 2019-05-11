@@ -35,6 +35,10 @@
     text-align: center;
     text-decoration: none;    
  }
+ .feedback_line input{
+    width: 16px;
+    border: 2px solid navy;
+ }
 .bt_less{
     margin-left: 2%;
     margin-right: 4%;
@@ -46,7 +50,7 @@
     font-size: 15px;
     font-weight: bold;
 }
-.feedback_line input{
+#feed4 input{
     margin-left: 2%;
     width: 73.7%;
     border: 2px solid navy;
