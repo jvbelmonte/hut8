@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="graphic.css"/>
     <link rel="stylesheet" type="text/css" href="feed.css"/>            
     <link rel="stylesheet" type="text/css" href="main_profile.css"/>    
-    <script src="main.js"></script>
 </head>
 <body>
     <div>
@@ -26,35 +25,35 @@
                 </p>
             </div>
 
-            <p id="is"><br>Trainee</p>
+            <p id="is"><br>TRAINEE</p>
 
             <nav id = "lista">
                 <ul>
-                    <li><a href="#">AAA</a>
+                    <li><a href="#">Menu 1</a>
                         <ul>
-                            <li><a href="#">aaa</a></li>
-                            <li><a href="#">aaa</a></li>
+                            <li><a href="#"> > sub menu 1</a></li>
+                            <li><a href="#"> > sub menu 1</a></li>
                         </ul>
                     </li>      
 
-                    <li><a href="#">BBB</a>
+                    <li><a href="#">Menu 2</a>
                         <ul>
-                            <li><a href="#">bbb</a></li>
-                            <li><a href="#">bbb</a></li>
+                            <li><a href="#"> > sub menu 2</a></li>
+                            <li><a href="#"> > sub menu 2</a></li>
                         </ul>
                     </li>        
 
-                    <li><a href="#">CCC</a>
+                    <li><a href="#">Menu 3</a>
                         <ul>
-                            <li><a href="#">ccc</a></li>
-                            <li><a href="#">ccc</a></li>
+                            <li><a href="#"> > sub menu 3</a></li>
+                            <li><a href="#"> > sub menu 3</a></li>
                         </ul>
                     </li>    
 
-                    <li><a href="#">DDD</a>
+                    <li><a href="#">Menu 4</a>
                         <ul>
-                            <li><a href="#">ddd</a></li>
-                            <li><a href="#">ddd</a></li>
+                            <li><a href="#"> > sub menu 4</a></li>
+                            <li><a href="#"> > sub menu 4</a></li>
                         </ul>
                     </li>    
                 </ul>
@@ -64,26 +63,22 @@
         <div id = "users">
             <div class="profile_block">
                 <img src="img/foto_perfil.jpg">
-                <span class="profile_name">Fulano da Silva<br></span>
-                <span class="cargo">Cargo</span>
+                <p>Fulano da Silva<br>Cargo</p>
             </div>
 
             <div class="profile_block">
                 <img src="img/foto_perfil.jpg">
-                <span class="profile_name">Fulano da Silva<br></span>
-                <span class="cargo">Cargo</span>
+                <p>Fulano da Silva<br>Cargo</p>
             </div>
 
             <div class="profile_block">
                 <img src="img/foto_perfil.jpg">
-                <span class="profile_name">Fulano da Silva<br></span>
-                <span class="cargo">Cargo</span>
+                <p>Fulano da Silva<br>Cargo</p>
             </div>
 
             <div class="profile_block">
                 <img src="img/foto_perfil.jpg">
-                <span class="profile_name">Fulano da Silva<br></span>
-                <span class="cargo">Cargo</span>
+                <p>Fulano da Silva<br>Cargo</p>
             </div>
         </div>
         
@@ -93,43 +88,73 @@
                 <h2>Feedback</h2>
                 
                 <div class="feedback_line">
-                    <span>Feedback 1</span>
-                    <button></button>   
-                    <output></output>
-                    <button></button>   
+                    <span>Feedback 1<br></span>
+                    <button class="bt_less">-</button>   
+                    <output>0</output>
+                    <button class="bt_more">+</button>   
                 </div>
                 
                 <div class="feedback_line">
-                    <span>Feedback 2</span>
-                    <button></button>   
-                    <output></output>
-                    <button></button>   
+                    <span>Feedback 2<br></span>
+                    <button class="bt_less">-</button>   
+                    <output>0</output>
+                    <button class="bt_more">+</button>   
                 </div>
 
                 <div class="feedback_line">
-                    <span>Feedback 3</span>
-                    <button></button>   
-                    <output></output>
-                    <button></button>   
+                    <span>Feedback 3<br></span>
+                    <button class="bt_less">-</button>   
+                    <output>0</output>
+                    <button class="bt_more">+</button>   
                 </div>
 
-                <div class="feedback_line">
+                <div class="feedback_line"  id="feed4">
                     <span>Feedback 4</span>
                     <input>
+                    <button id="send">Send</button>
                 </div>
-                <button></button>
             </div>
 
             <div id="pizza" class="box">
-
+                <h2>Graphic</h2>
+                <div id="graphic"></div>
             </div>
 
             <div id="main_profile" class="box">
+                <h2>Profile</h2>
                 <img src="img/foto_perfil.jpg">
+                
+                <p>Cargo<br>Fulano da Silva<br><br>@fulanin<br><br>Contato: fulanodasilva@email.com</p>
             </div>
 
         </div>    
         
     </div>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['var 1', 'var 2'],
+          ['Feedback 1', 11],
+          ['Feedback 2', 2],
+          ['Feedback 3', 2],
+        ]);
+
+        var options = {
+            width:  380, 
+            height: 300,
+            fontSize: 12,
+            is3D: true
+        }
+
+        var chart = new google.visualization.PieChart(document.getElementById('graphic'));
+
+        chart.draw(data, options);
+      }
+    </script>    
 </body>
 </html>
